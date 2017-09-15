@@ -423,22 +423,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudentsWithMaxAvgMark() {
 		// Add your implementation here
-		Student result;
-		int large=0;
-		for(int i=0;i<length;i++){
-			if(students[i].getAvgMark()>large)
-			{
-				large=students[i].getAvgMark();
-				result.setId(students[i].getId());
-				result.setFullName(students[i].getFullName());
-				result.setBirthDate(students[i].getBirthDate());
-				result.setAvgMark(students[i].getgetAvgMark());
-			}
-		}
-
-		Student[] students1=new Student[1];
-					students1[0]=result;
-			return students1;	
+		return null;
 	}
 
 	@Override
