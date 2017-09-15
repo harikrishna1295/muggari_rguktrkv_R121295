@@ -423,8 +423,9 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudentsWithMaxAvgMark() {
 		// Add your implementation here
-		Student result;
-		int large=0;
+		Date date=new Date(1997-6-7);
+		Student result=new Student(1,"hari krishna",date,30);
+		double large=0;
 		for(int i=0;i<length;i++){
 			if(students[i].getAvgMark()>large)
 			{
@@ -432,7 +433,7 @@ public class StudentGroup implements StudentArrayOperation {
 				result.setId(students[i].getId());
 				result.setFullName(students[i].getFullName());
 				result.setBirthDate(students[i].getBirthDate());
-				result.setAvgMark(students[i].getgetAvgMark());
+				result.setAvgMark(students[i].getAvgMark());
 			}
 		}
 
